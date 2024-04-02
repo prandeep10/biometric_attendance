@@ -1,0 +1,93 @@
+.subject-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .subject-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .attendance-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .attendance-box {
+    text-align: center;
+  }
+  
+  .attendance-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .attendance-box span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .percentage-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .circular-chart {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 2;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+  }
+  
+  .circle.high {
+    stroke: green;
+  }
+  
+  .circle.medium {
+    stroke: yellow;
+  }
+  
+  .circle.low {
+    stroke: red;
+  }
+  
+  .alert {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
